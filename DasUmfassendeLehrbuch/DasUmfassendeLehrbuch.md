@@ -46,4 +46,8 @@ Entwickeln Sie einen Algorithmus, der prüft, ob eine Zahl eine Primzahl ist.
 ## A3.10
 **Dateiname:** dulc_a3_10.c  
 **Aufgabenstellung:**  
-Schreiben Sie ein Programm, das das kleine Einmaleins berechnet und in Tabellenform auf dem Bildschirm ausgibt. Die Darstellung sollte wie folgt sein.
+Schreiben Sie ein Programm, das das kleine Einmaleins berechnet und in Tabellenform auf dem Bildschirm ausgibt. Die Darstellung sollte wie folgt sein.  
+## A4.1
+**Dateiname:** dulc_a4_1.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, das zu einem gegebenen Anfangskapital und einem jährlichen Zinssatz berechnet, wie viele Jahre benötigt werden, damit das Kapital eine bestimmte Zielsumme überschreitet.
