@@ -1,4 +1,4 @@
-# 3.8 Aufgaben
+# Aufgaben 3
 ## A3.2
 **Dateiname:** dulc_a3_2.c  
 **Aufgabenstellung:**  
@@ -27,7 +27,23 @@ Ausgabe: 7, 14, 21, 28, 35, 42, 49, 56, 63, 70
 ## A3.6
 **Dateiname:** dulc_a3_6.c  
 **Aufgabenstellung:**  
-Schreiben Sie ein Programm, das berechnet, wie viele Legosteine zum bau der folgenden Treppe mit der zuvor eingegebenen Höhe h erforderlich sind.
+Schreiben Sie ein Programm, das berechnet, wie viele Legosteine zum bau der folgenden Treppe mit der zuvor eingegebenen Höhe h erforderlich sind.  
 **Test:**  
 Eingabe: Höhe 4  
 Ausgabe: 10 Legosteine  
+## A3.7
+**Dateiname:** dulc_a3_7.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, das eine vom Benutzer festgelegte Anzahl von Zahlen einliest und anschließend die größte und die kleinste der eingegebenen Zahlen auf dem Bildschirm ausgibt.  
+## A3.8
+**Dateiname:** dulc_a3_8.c  
+**Aufgabenstellung:**  
+Sie sollen eine unbekannte Zahl x(a <= x <= b) erraten und haben dabei beliebig viele Versuche. Bei jedem Versuch erhalten Sie die Rückmeldung, ob die gesuchte Zahl größer, kleiner oder gleich der von Ihnen geratenen Zahl ist. Entwickeln Sie einen Algorithmus.  
+## A3.9
+**Dateiname:** dulc_a3_9.c  
+**Aufgabenstellung:**  
+Entwickeln Sie einen Algorithmus, der prüft, ob eine Zahl eine Primzahl ist.  
+## A3.10
+**Dateiname:** dulc_a3_10.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, das das kleine Einmaleins berechnet und in Tabellenform auf dem Bildschirm ausgibt. Die Darstellung sollte wie folgt sein.
