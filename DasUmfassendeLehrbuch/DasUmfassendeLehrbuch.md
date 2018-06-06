@@ -7,9 +7,13 @@ Schreiben Sie ein Programm, das zwei ganze Zahlen von der Tastatur einliest und 
 **Dateiname:** dulc_a3_3.c  
 **Aufgabenstellung:**  
 Erstellen Sie ein Programm, das unter der Verwendung der in Aufgabe 1.3 formulierten Regeln berechnt, ob eine vom Benutzer eingegebene Jahreszahl ein Schaltjahr bezeichnet oder nicht.  
-*Schaltjahr: 2016*  
-*Kein Schaltjahr: 2000*  
+**Test:**  
+Kein Schaltjahr: 2001  
+Schaltjahr: 2016  
 ## A3.4
 **Dateiname:** dulc_a3_4.c  
 **Aufgabenstellung:**  
-Erstellen Sie ein Programm, das zu einem eingegebenen Datum (Tag, Monat und Jahr) berechnet, um den wievielten Tag des Jahres es sich handelt. Berücksichtigen Sie dabei die Schaltjahrregel.
+Erstellen Sie ein Programm, das zu einem eingegebenen Datum (Tag, Monat und Jahr) berechnet, um den wievielten Tag des Jahres es sich handelt. Berücksichtigen Sie dabei die Schaltjahrregel.  
+**Test:**  
+Kein Schaltjahr: 5.12.2001 --> 339  
+Schaltjahr: 5.12.2016 --> 340  
