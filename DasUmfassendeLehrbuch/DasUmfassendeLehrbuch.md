@@ -17,3 +17,10 @@ Erstellen Sie ein Programm, das zu einem eingegebenen Datum (Tag, Monat und Jahr
 **Test:**  
 Kein Schaltjahr: 5.12.2001 --> 339  
 Schaltjahr: 5.12.2016 --> 340  
+## A3.5
+**Dateiname:** dulc_a3_5.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, das alle durch 7 teilbaren Zahlen zwischen zwei zuvor eingegebenen Grenzen ausgibt.  
+**Test:**  
+Eingabe: Untere Grenze: 0  und obere Grenze: 71  
+Ausgabe: 7, 14, 21, 28, 35, 42, 49, 56, 63, 70  
