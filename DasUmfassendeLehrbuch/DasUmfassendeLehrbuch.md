@@ -24,3 +24,10 @@ Schreiben Sie ein Programm, das alle durch 7 teilbaren Zahlen zwischen zwei zuvo
 **Test:**  
 Eingabe: Untere Grenze: 0  und obere Grenze: 71  
 Ausgabe: 7, 14, 21, 28, 35, 42, 49, 56, 63, 70  
+## A3.6
+**Dateiname:** dulc_a3_6.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, das berechnet, wie viele Legosteine zum bau der folgenden Treppe mit der zuvor eingegebenen Höhe h erforderlich sind.
+**Test:**  
+Eingabe: Höhe 4  
+Ausgabe: 10 Legosteine  
