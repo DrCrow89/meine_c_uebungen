@@ -1,4 +1,4 @@
-# Aufgaben 3
+# Aufgabe 3
 ## A3.2
 **Dateiname:** dulc_a3_2.c  
 **Aufgabenstellung:**  
@@ -47,7 +47,12 @@ Entwickeln Sie einen Algorithmus, der prüft, ob eine Zahl eine Primzahl ist.
 **Dateiname:** dulc_a3_10.c  
 **Aufgabenstellung:**  
 Schreiben Sie ein Programm, das das kleine Einmaleins berechnet und in Tabellenform auf dem Bildschirm ausgibt. Die Darstellung sollte wie folgt sein.  
+# Aufgabe 3
 ## A4.1
 **Dateiname:** dulc_a4_1.c  
 **Aufgabenstellung:**  
-Schreiben Sie ein Programm, das zu einem gegebenen Anfangskapital und einem jährlichen Zinssatz berechnet, wie viele Jahre benötigt werden, damit das Kapital eine bestimmte Zielsumme überschreitet.
+Schreiben Sie ein Programm, das zu einem gegebenen Anfangskapital und einem jährlichen Zinssatz berechnet, wie viele Jahre benötigt werden, damit das Kapital eine bestimmte Zielsumme überschreitet.  
+## A4.2
+**Dateiname:** dulc_a4_2.c  
+**Aufgabenstellung:**  
+Den größten gemeinsamen Teiler von zweinatürlichen Zahlen können Sie berechnen, indem Sie so lange die kleinere Zahl von der größeren Zahl abziehen, bis beide Zahlen gleich sind. Erstellen Sie ein Programm, das den ggt berechnet.  
