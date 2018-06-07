@@ -73,3 +73,7 @@ Immunisierungsrate: 0.06
 Gesamtpopulation: 2000  
 Akut Kranke: 10  
 Anzahl Tage: 25  
+## A4.6
+**Dateiname:** dulc_a4_6.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, das für eine beliebige Wahl mit drei Parteien die Sitzverteilung laut Viktor d'Hondt berechnet. Die Anzahl der zu vergebenden Sitze und die Stimmen dür die drei Parteien sollten dabei vom Benutzer eingegeben werden.
