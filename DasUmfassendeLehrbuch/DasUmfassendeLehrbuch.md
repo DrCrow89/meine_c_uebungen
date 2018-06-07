@@ -56,3 +56,7 @@ Schreiben Sie ein Programm, das zu einem gegebenen Anfangskapital und einem jäh
 **Dateiname:** dulc_a4_2.c  
 **Aufgabenstellung:**  
 Den größten gemeinsamen Teiler von zweinatürlichen Zahlen können Sie berechnen, indem Sie so lange die kleinere Zahl von der größeren Zahl abziehen, bis beide Zahlen gleich sind. Erstellen Sie ein Programm, das den ggt berechnet.  
+## A4.3
+**Dateiname:** dulc_a4_3.c  
+**Aufgabenstellung:**  
+Sie haben zwei ausreichend große Eimer. Im ersten befinden sich x, im zweiten y Liter Wasser. Sie füllen nun immer a Prozent des Wassers aus dem ersten in den zweiten und anschließend b Prozent des Wassers aus dem zweiten in den ersten Eimer. Diesen Umfüllprozess führen Sie n-mal durch. Erstellen Sie ein Programm, das nach Eingabe von Startwerten (x, y, a, b und n) die Füllstände der Eimer nach jedem Umfüllen ermittelt und auf dem Bildschirm ausgibt. Welche Aufteilung des Wassers ergibt sich auf lange Sicht für unterschiedliche Startwerte?  
