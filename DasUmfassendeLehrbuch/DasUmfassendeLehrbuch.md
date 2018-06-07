@@ -60,3 +60,7 @@ Den größten gemeinsamen Teiler von zweinatürlichen Zahlen können Sie berechn
 **Dateiname:** dulc_a4_3.c  
 **Aufgabenstellung:**  
 Sie haben zwei ausreichend große Eimer. Im ersten befinden sich x, im zweiten y Liter Wasser. Sie füllen nun immer a Prozent des Wassers aus dem ersten in den zweiten und anschließend b Prozent des Wassers aus dem zweiten in den ersten Eimer. Diesen Umfüllprozess führen Sie n-mal durch. Erstellen Sie ein Programm, das nach Eingabe von Startwerten (x, y, a, b und n) die Füllstände der Eimer nach jedem Umfüllen ermittelt und auf dem Bildschirm ausgibt. Welche Aufteilung des Wassers ergibt sich auf lange Sicht für unterschiedliche Startwerte?  
+## A4.4
+**Dateiname:** dulc_a4_4.c  
+**Aufgabenstellung:**  
+In einem Schulbezirk gibt es 1200 Planstellen für Lehrer. Diese unterteilen sich derzeit in 40 Studiendirektoren, 160 Oberstudienräte und 1000 Studienräte. Alle drei Jahre ist eine Beförderung möglich, dabei steigen jeweils 10% der Oberstudienräte und 20% der Studienräte in die nächsthöhere Gruppe auf. Darüber hinaus gehen 20% einer Gruppe innerhalb von drei Jahren in den Ruhestand. Die dadurch frei werdenden Planstellen werden mit Studienräten besetzt. Schreiben Sie ein Programm, das die bestehende Situation in Dreijahreszyklen fortschreibt.  
