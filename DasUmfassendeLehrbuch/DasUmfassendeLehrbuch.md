@@ -105,3 +105,7 @@ Erstellen Sie Berechnungsprogramme für Sinus, Cosinus und e-Funktion mit Hilfe 
 e⁵ = 148,413159 (Taschenrechner = 148,413159103)
 sin 50 = 0.766044 (Taschenrechner = 0,766044443)
 cos 50 = 0.642788 (Taschenrechner = 0,64278761)
+## A4.10
+**Dateiname:** dulc_a4_10.c  
+**Aufgabenstellung:**  
+Erstellen Sie ein Programm, um den Steinverbrauch für die in der Abbildung gezeigten Treppen und die Pyramiden zu berechnen. Die Pyramiden sind dabei innen nicht hohl. Versuchen Sie, auch explizite Formeln für den Steinverbrauch herzuleiten. Vergleichen Sie die iterativ berechneten Ergebnisse mit den durch die expliziten Formeln gegebenen Zahlen.  

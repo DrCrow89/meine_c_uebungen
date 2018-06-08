@@ -130,4 +130,21 @@ double eigene_exp(double uebergabe_zahl)
     return ergebnis;
 }
 
+int eigeneSumme(int start_zahl, int end_zahl)
+{
+    int ergebnis = 0;
+    if(start_zahl < end_zahl)
+    {
+        for(;start_zahl <= end_zahl; start_zahl++)
+        {
+            ergebnis = ergebnis + start_zahl;
+        }
+        return ergebnis;
+    }
+    else
+    {
+        return -1;
+    }
+}
+
 #endif // MATHRK_H_INCLUDED
