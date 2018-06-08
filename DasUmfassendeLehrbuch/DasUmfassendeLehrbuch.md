@@ -90,3 +90,11 @@ Im folgenden Zahlenkreis stehen die Buchstaben jeweils für eine Ziffer. Bestimm
 + efg ist das Produkt von Aa mit der Quersumme von efg  
 + GHA ist das Produkt von eE mit der Quersumme von ABC  
 Die Quersumme von gha ist Cc  
+## A4.8
+**Dateiname:** dulc_a4_8.c  
+**Aufgabenstellung:**  
+Erstellen Sie ein Programm, das zu einer vom Benutzer eingegebenen Zahl die Primzahlenzerlegung ermittelt.
+**Test:**  
+Bei der Eingabe von 13230 erhält man das Ergebnis:
+Eingabe: 13230  
+Ausgabe: 2*3*3*3*5*7*7
