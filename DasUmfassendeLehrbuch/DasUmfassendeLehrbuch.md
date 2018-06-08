@@ -95,6 +95,13 @@ Die Quersumme von gha ist Cc
 **Aufgabenstellung:**  
 Erstellen Sie ein Programm, das zu einer vom Benutzer eingegebenen Zahl die Primzahlenzerlegung ermittelt.
 **Test:**  
-Bei der Eingabe von 13230 erhält man das Ergebnis:
 Eingabe: 13230  
 Ausgabe: 2*3*3*3*5*7*7
+## A4.9
+**Dateiname:** dulc_a4_9.c  
+**Aufgabenstellung:**  
+Erstellen Sie Berechnungsprogramme für Sinus, Cosinus und e-Funktion mit Hilfe der Potenzreihenentwicklung. Überprüfen Sie die Ergebnisse Ihrer Programme mit einem Taschenrechner.  
+**Test:**  
+e⁵ = 148,413159 (Taschenrechner = 148,413159103)
+sin 50 = 0.766044 (Taschenrechner = 0,766044443)
+cos 50 = 0.642788 (Taschenrechner = 0,64278761)

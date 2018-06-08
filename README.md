@@ -11,3 +11,4 @@ Ausführen   --> ./test.o
 - [ ] Aufgabe 3.9  
 - [ ] Aufgabe 3.10  
 - [ ] Aus Aufgabe 4.8 Funktion erstellen  
+- [ ] Aufgabe 4.9 aufräumen und die 3 Funktionen über Menü abfragen  
