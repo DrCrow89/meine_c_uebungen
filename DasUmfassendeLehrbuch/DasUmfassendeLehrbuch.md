@@ -76,4 +76,17 @@ Anzahl Tage: 25
 ## A4.6
 **Dateiname:** dulc_a4_6.c  
 **Aufgabenstellung:**  
-Schreiben Sie ein Programm, das für eine beliebige Wahl mit drei Parteien die Sitzverteilung laut Viktor d'Hondt berechnet. Die Anzahl der zu vergebenden Sitze und die Stimmen dür die drei Parteien sollten dabei vom Benutzer eingegeben werden.
+Schreiben Sie ein Programm, das für eine beliebige Wahl mit drei Parteien die Sitzverteilung laut Viktor d'Hondt berechnet. Die Anzahl der zu vergebenden Sitze und die Stimmen dür die drei Parteien sollten dabei vom Benutzer eingegeben werden.  
+## A4.7
+**Dateiname:** dulc_a4_7.c  
+**Aufgabenstellung:**  
+Im folgenden Zahlenkreis stehen die Buchstaben jeweils für eine Ziffer. Bestimmen Sie diese Ziffern (1 bis 9) so, dass folgende Bedingungen erfüllt werden:  
++ Aa, Bb, Cc, Dd, Ee, Ff, Gg und Hh sind Primzahlen  
++ ABC ist ein Vielfaches von Aa  
++ abc ist gleich cba  
++ CDE ist das Produkt von Ccmit der Quersumme von CDE  
++ Bb ist gleich der Quersumme von cde  
++ EFG ist ein Vielfaches von Aa  
++ efg ist das Produkt von Aa mit der Quersumme von efg  
++ GHA ist das Produkt von eE mit der Quersumme von ABC  
+Die Quersumme von gha ist Cc  
