@@ -119,7 +119,7 @@ double eigene_exp(double uebergabe_zahl)
 {
     double ergebnis = 0.0;
     double ergebnis_temp = 0.0;
-    printf("Uebergabe: %lf\n", uebergabe_zahl);
+    //printf("Uebergabe: %lf\n", uebergabe_zahl);
 
     for(int schleife = 0; schleife < 50; schleife++)
     {
