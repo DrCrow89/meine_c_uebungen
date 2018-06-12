@@ -5,28 +5,63 @@ char nein = 'n';
 char lieferfaehig = 'n';
 char vollstaendig = 'n';
 char bonitaet = 'n';
-
-int main()
-{
-  bedingungen_lesen();
-  aktion_erstellen();
-  return 0;
-}
+char puffer_enter = 't';
 
 void bedingungen_lesen()
 {
-  printf("Lieferfähig?: ");
-  lieferfaehig = getchar();
-  printf("Angaben vollständig?: ");
-  vollstaendig = getchar();
-  printf("Bonität in Ordung?: ");
-  bonitaet = getchar();
+  printf("\nLieferfähig?: ");
+  scanf("%c%c", &lieferfaehig, &puffer_enter);
+  printf("\nAngaben vollständig?: ");
+  scanf("%c%c", &vollstaendig, &puffer_enter);
+  printf("\nBonität in Ordung?: ");
+  scanf("%c%c", &bonitaet, &puffer_enter);
 }
 
 void aktion_erstellen()
 {
-  if(
-      (lieferfaehig == ja)
-    &&(vollstaendig == Ja)
-    &&(bonitaet == Ja)
+  if(  (lieferfaehig == ja)
+     &&(vollstaendig == ja)
+     &&(bonitaet == ja)
+    )
+    {
+      printf("Lieferung mit Rechnung\n");
+    }
+  else if(  (lieferfaehig == ja)
+          &&(vollstaendig == ja)
+          &&(bonitaet == nein)
+         )
+    {
+      printf("Lieferung als Nachname\n");
+    }
+  else if(  (lieferfaehig == ja)
+          &&(vollstaendig == nein)
+          &&(bonitaet == ja)
+         )
+      {
+        printf("Lieferung mit Rechnung\n");
+        printf("Angaben vervollständigen\n");
+      }
+  else if(  (lieferfaehig == ja)
+          &&(vollstaendig == nein)
+          &&(bonitaet == ja)
+         )
+        {
+          printf("Lieferung als Nachname\n");
+          printf("Angaben vervollständigen\n");
+        }
+  else
+  {
+    printf("nicht lieferbar\n");
+  }
+
+}
+
+int main()
+{
+  while(1)
+  {
+    bedingungen_lesen();
+    aktion_erstellen();
+  }
+  return 0;
 }
