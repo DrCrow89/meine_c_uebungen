@@ -47,7 +47,7 @@ Entwickeln Sie einen Algorithmus, der prüft, ob eine Zahl eine Primzahl ist.
 **Dateiname:** dulc_a3_10.c  
 **Aufgabenstellung:**  
 Schreiben Sie ein Programm, das das kleine Einmaleins berechnet und in Tabellenform auf dem Bildschirm ausgibt. Die Darstellung sollte wie folgt sein.  
-# Aufgabe 3
+# Aufgabe 4
 ## A4.1
 **Dateiname:** dulc_a4_1.c  
 **Aufgabenstellung:**  
@@ -109,3 +109,8 @@ cos 50 = 0.642788 (Taschenrechner = 0,64278761)
 **Dateiname:** dulc_a4_10.c  
 **Aufgabenstellung:**  
 Erstellen Sie ein Programm, um den Steinverbrauch für die in der Abbildung gezeigten Treppen und die Pyramiden zu berechnen. Die Pyramiden sind dabei innen nicht hohl. Versuchen Sie, auch explizite Formeln für den Steinverbrauch herzuleiten. Vergleichen Sie die iterativ berechneten Ergebnisse mit den durch die expliziten Formeln gegebenen Zahlen.  
+# Aufgabe 5
+## A5.7
+**Dateiname:** dulc_a5_7.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, das die in der Tabelle genannten Beingungen abfragt und dann die erforderlichen Aktionen ausgibt.  
