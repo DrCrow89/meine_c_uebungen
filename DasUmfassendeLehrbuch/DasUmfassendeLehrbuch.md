@@ -114,3 +114,24 @@ Erstellen Sie ein Programm, um den Steinverbrauch für die in der Abbildung geze
 **Dateiname:** dulc_a5_7.c  
 **Aufgabenstellung:**  
 Schreiben Sie ein Programm, das die in der Tabelle genannten Beingungen abfragt und dann die erforderlichen Aktionen ausgibt.  
+# Aufgabe 6
+## A6.1
+**Dateiname:** dulc_a6_1.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, das einen String und einen Buchstaben übergeben bekommt und dann ausgibt, wie oft der Buchstabe in dem String vorkommt.
+## A6.2
+**Dateiname:** dulc_a6_2.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, dass die Reihenfolge der Zeichen in einem String tauscht.
+## A6.3
+**Dateiname:** dulc_a6_3.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, dass alle 'e' in einem String löscht.
+## A6.4
+**Dateiname:** dulc_a6_4.c  
+**Aufgabenstellung:**  
+Erweitern Sie das Programm zur Palindromerkennung so, dass es nicht zwischen Groß- und Kleinschreibung unterscheidet.
+## A6.5
+**Dateiname:** dulc_a6_5.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, dass nur aus Ziffern 
