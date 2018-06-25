@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "stringrk.h"
 
 int main()
 {
@@ -11,6 +10,7 @@ int main()
   char vergleich_buchstabe[2];
   int string_laenge;
   int anzahl_buchstabe;
+  int test_anzahl_buchstaben;
 
   while(1)
   {
@@ -18,14 +18,13 @@ int main()
     fgets(eingabe_wort, 100, stdin);
     printf("Ihre Eingabe: %s\n", eingabe_wort);
 
-    check_anzahl_buchstaben(&eingabe_wort, 100);
     do{
       printf("Bitte geben Sie einen Buchstaben ein: ");
       fgets(eingabe_buchstabe, 100, stdin);
       string_laenge = strlen(eingabe_buchstabe);
       vergleich_buchstabe[0] = eingabe_buchstabe[0];
     }while (string_laenge > 2);
-
+    //check_anzahl_buchstaben(eingabe_wort, 100);
     for (int i = 0; i < strlen(eingabe_wort); i++)
     {
       vergleich_wort[0] = eingabe_wort[i];
@@ -40,6 +39,8 @@ int main()
       }
     }
     printf("Das Wort %s hat den Buchstaben %c: %d mal \n", eingabe_wort, vergleich_buchstabe[0], anzahl_buchstabe);
+    test_anzahl_buchstaben = check_anzahl_buchstaben(eingabe_wort, strlen(eingabe_wort), eingabe_buchstabe, 2);
+    printf("Das Wort hat den Buchstaben %d Buchstaben.\n", test_anzahl_buchstaben);
   }
   return 0;
 }
