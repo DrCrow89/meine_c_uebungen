@@ -134,4 +134,4 @@ Erweitern Sie das Programm zur Palindromerkennung so, dass es nicht zwischen Gro
 ## A6.5
 **Dateiname:** dulc_a6_5.c  
 **Aufgabenstellung:**  
-Schreiben Sie ein Programm, dass nur aus Ziffern 
+Schreiben Sie ein Programm, dass nur aus Ziffern bestehende Zeichenfolge einliest und aus dem Eingabestring eine int-Zahl berechnet.  
