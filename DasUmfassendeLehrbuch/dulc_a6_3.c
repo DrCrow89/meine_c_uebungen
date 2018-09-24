@@ -6,7 +6,7 @@ int main()
 {
   char eingabe_wort[100];
   char bearbeitetes_wort[100];
-  int vergleich_buchstabe;
+  int zu_loeschender_buchstabe = 101;
 
   while(1)
   {
@@ -17,7 +17,7 @@ int main()
 
     for (int i = 0; i < strlen(eingabe_wort) ; i++)
     {
-      if(eingabe_wort[i] != 101)
+      if(eingabe_wort[i] != zu_loeschender_buchstabe)
       {
         bearbeitetes_wort[j] = eingabe_wort[i];
         j++;
