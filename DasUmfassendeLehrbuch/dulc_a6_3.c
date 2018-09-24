@@ -23,5 +23,12 @@ int main()
         j++;
       }
     }
+    printf("Ausgabe: ");
+    for (int i = 0; i < strlen(bearbeitetes_wort)-1 ; i++)
+    {
+      printf("%c", bearbeitetes_wort[i]);
+    }
+    printf("\nEnde\n");
+  }
   return 0;
 }
