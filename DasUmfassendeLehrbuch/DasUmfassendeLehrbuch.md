@@ -135,3 +135,18 @@ Erweitern Sie das Programm zur Palindromerkennung so, dass es nicht zwischen Gro
 **Dateiname:** dulc_a6_5.c  
 **Aufgabenstellung:**  
 Schreiben Sie ein Programm, dass nur aus Ziffern bestehende Zeichenfolge einliest und aus dem Eingabestring eine int-Zahl berechnet.  
+## A6.6
+**Dateiname:** dulc_a6_6.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, dass 10 Zahlen einliest und auf Wunsch bestimmte Zahlen wieder ausgibt. Das Programm soll wie folgt arbeiten.
+**Test:**  
+Gib die 1. Zahl ein: 23  
+Gib die 1. Zahl ein: 101  
+Gib die 1. Zahl ein: 244
+Gib die 1. Zahl ein: 2  
+Gib die 1. Zahl ein: 25  
+Gib die 1. Zahl ein: 45  
+Gib die 1. Zahl ein: 230  
+Gib die 1. Zahl ein: 33  
+Gib die 1. Zahl ein: 3  
+Gib die 1. Zahl ein: 0  
