@@ -19,7 +19,7 @@ int main()
 
   while(1)
   {
-    printf("Welche Zahl soll ich ausgeben:");
+    printf("Welche Zahl soll ich ausgeben: ");
     scanf("%d", &eingabe_zahl);
 
     if(eingabe_zahl > 0 && eingabe_zahl < 11)
