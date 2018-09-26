@@ -141,12 +141,18 @@ Schreiben Sie ein Programm, dass nur aus Ziffern bestehende Zeichenfolge einlies
 Schreiben Sie ein Programm, dass 10 Zahlen einliest und auf Wunsch bestimmte Zahlen wieder ausgibt. Das Programm soll wie folgt arbeiten.
 **Test:**  
 Gib die 1. Zahl ein: 23  
-Gib die 1. Zahl ein: 101  
-Gib die 1. Zahl ein: 244
-Gib die 1. Zahl ein: 2  
-Gib die 1. Zahl ein: 25  
-Gib die 1. Zahl ein: 45  
-Gib die 1. Zahl ein: 230  
-Gib die 1. Zahl ein: 33  
-Gib die 1. Zahl ein: 3  
-Gib die 1. Zahl ein: 0  
+Gib die 2. Zahl ein: 101  
+Gib die 3. Zahl ein: 244
+Gib die 4. Zahl ein: 2  
+Gib die 5. Zahl ein: 25  
+Gib die 6. Zahl ein: 45  
+Gib die 7. Zahl ein: 230  
+Gib die 8. Zahl ein: 33  
+Gib die 9. Zahl ein: 3  
+Gib die 10. Zahl ein: 0  
+
+Welche Zahl soll ausgegeben werden?  3  
+Die 3. Zahl ist 244  
+
+Welche Zahl soll ausgegeben werden?  9  
+Die 9. Zahl ist 244  
