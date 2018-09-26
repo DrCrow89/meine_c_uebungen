@@ -22,7 +22,14 @@ int main()
     printf("Welche Zahl soll ich ausgeben:");
     scanf("%d", &eingabe_zahl);
 
-    printf("Die %d. Zahl ist %d\n", eingabe_zahl, zahlen_array[eingabe_zahl-1]);
+    if(eingabe_zahl > 0 && eingabe_zahl < 11)
+    {
+      printf("Die %d. Zahl ist %d\n", eingabe_zahl, zahlen_array[eingabe_zahl-1]);
+    }
+    else
+    {
+      printf("Bitte nur Zahlen von 1 bis 10 eingeben.\n");
+    }
   }
   return 0;
 }
