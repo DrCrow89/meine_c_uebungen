@@ -156,3 +156,8 @@ Die 3. Zahl ist 244
 
 Welche Zahl soll ausgegeben werden?  9  
 Die 9. Zahl ist 244  
+
+## A6.7
+**Dateiname:** dulc_a6_7.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, dass 10 Zahlen einliest und diese der Größe nach sortiert.
