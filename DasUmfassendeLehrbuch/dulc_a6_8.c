@@ -39,7 +39,8 @@ int main()
   int array[5][5] = {{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};
   //int array[5][5];
   //einlesen_array5x5(array);
-
   print_array5x5(array);
+  print_array_2d_format((int*)array, 5, 5);
+
   return 0;
 }

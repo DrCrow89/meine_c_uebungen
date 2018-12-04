@@ -23,4 +23,37 @@ void bubblesort(int *array, int lenght)
     }
   }
 }
+
+/** \brief Funktion gibt ein 2 dimensonales Array auf der Konsole aus mit Formatierung aus.
+ *
+ * \param int *array
+ * \param int zeilen
+ * \param int spalten
+ *
+ * Aufruf: print_array_2d_format((int*)array, 5, 5);
+ */
+void print_array_2d_format(int *array, int zeilen, int spalten)
+{
+  printf("2dArray:\n");
+  for(int i = 0; i < zeilen; i++)
+  {
+    for(int j = 0; j < spalten; j++)
+    {
+      if(array[i+zeilen*j] <= 9)
+      {
+        printf("[00%d]", array[i+zeilen*j]);
+      }
+      else if(array[i+zeilen*j] <= 99)
+      {
+        printf("[0%d]", array[i+zeilen*j]);
+      }
+      else
+      {
+        printf("[%d]", array[i+zeilen*j]);
+      }
+    }
+    printf("\n");
+  }
+}
+
 #endif // FUNKTIONENRK_IMPORT
