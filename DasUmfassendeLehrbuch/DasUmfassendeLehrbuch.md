@@ -161,3 +161,8 @@ Die 9. Zahl ist 244
 **Dateiname:** dulc_a6_7.c  
 **Aufgabenstellung:**  
 Schreiben Sie ein Programm, dass 10 Zahlen einliest und diese der Größe nach sortiert.
+
+## A6.8
+**Dateiname:** dulc_a6_8.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm welches in einem 5x5 Feld 
