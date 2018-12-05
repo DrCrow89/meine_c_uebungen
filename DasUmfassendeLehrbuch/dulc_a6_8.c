@@ -36,13 +36,12 @@ void einlesen_array5x5(int array[5][5])
 
 int main()
 {
-  int array[5][5] = {{ 1, 2, 3, 4, 5},
-                     { 6, 7, 8, 9,10},
-                     {11,12,13,14,15},
-                     {16,17,18,19,20},
-                     {21,22,23,24,25}};
-  int vergleichswert = 25;
-  int summen_ok = 0;
+  int array[5][5] = {{ 19,  3, 12, 21, 10},
+                     { 11, 25,  9, 18,  2},
+                     {  8, 17,  1, 15, 24},
+                     {  5, 14, 23,  7, 16},
+                     { 22,  6, 20,  4, 13}};
+  int vergleichswert = 65;
   int tempSumme = 0;
 
   //int array[5][5];
@@ -60,8 +59,7 @@ int main()
     }
     if(tempSumme != vergleichswert)
     {
-      //printf("Die Summe in Zeile %d ist ungleich %d\n",i+1 , vergleichswert);
-      summen_ok++;
+      printf("Die Summe in Zeile %d ist ungleich %d\n",i+1 , vergleichswert);
     }
   }
   // Prüfen der Spalten
@@ -74,8 +72,7 @@ int main()
     }
     if(tempSumme != vergleichswert)
     {
-      //printf("Die Summe in Spalte %d ist ungleich %d\n",i+1 , vergleichswert);
-      summen_ok++;
+      printf("Die Summe in Spalte %d ist ungleich %d\n",i+1 , vergleichswert);
     }
   }
   // Prüfen der Diagonale 1
@@ -86,8 +83,7 @@ int main()
   }
   if(tempSumme != vergleichswert)
   {
-    //printf("Die Summe der Diagonalen 1 ist ungleich %d. Sie ist %d \n",vergleichswert, tempSumme);
-    summen_ok++;
+    printf("Die Summe der Diagonalen 1 ist ungleich %d. Sie ist %d \n",vergleichswert, tempSumme);
   }
 
   // Prüfen der Diagonale 2
@@ -98,17 +94,8 @@ int main()
   }
   if(tempSumme != vergleichswert)
   {
-    //printf("Die Summe der Diagonalen 2 ist ungleich %d. Sie ist %d \n",vergleichswert, tempSumme);
-    summen_ok++;
+    printf("Die Summe der Diagonalen 2 ist ungleich %d. Sie ist %d \n",vergleichswert, tempSumme);
   }
 
-  if(tempSumme == 0)
-  {
-    printf("Die Summe in den Zeilen und Spalten sowie die beide Diagonalen betragen jeweils %d\n", vergleichswert);
-  }
-  else
-  {
-    printf("Die Summe in den Zeilen und Spalten sowie die beide Diagonalen betragen jeweils nicht %d\n", vergleichswert);
-  }
   return 0;
 }

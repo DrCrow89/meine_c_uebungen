@@ -166,3 +166,9 @@ Schreiben Sie ein Programm, dass 10 Zahlen einliest und diese der Größe nach s
 **Dateiname:** dulc_a6_8.c  
 **Aufgabenstellung:**  
 Schreiben Sie ein Programm welches in einem 5x5 Feld die Summe der Reihen und Spalten sowie der beiden Diagonalen berechnet und dieses auf einen Wert prüft.  
+**Test:**  
+19  3 12 21 10  
+11 25  9 18  2  
+ 8 17  1 15 24  
+ 5 14 23  7 16  
+22  6 20  4 13  
