@@ -160,9 +160,9 @@ Die 9. Zahl ist 244
 ## A6.7
 **Dateiname:** dulc_a6_7.c  
 **Aufgabenstellung:**  
-Schreiben Sie ein Programm, dass 10 Zahlen einliest und diese der Größe nach sortiert.
+Schreiben Sie ein Programm, dass 10 Zahlen einliest und diese der Größe nach sortiert.  
 
 ## A6.8
 **Dateiname:** dulc_a6_8.c  
 **Aufgabenstellung:**  
-Schreiben Sie ein Programm welches in einem 5x5 Feld 
+Schreiben Sie ein Programm welches in einem 5x5 Feld die Summe der Reihen und Spalten sowie der beiden Diagonalen berechnet und dieses auf einen Wert prüft.  
