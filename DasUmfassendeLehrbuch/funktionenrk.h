@@ -55,5 +55,16 @@ void print_array_2d_format(int *array, int zeilen, int spalten)
     printf("\n");
   }
 }
+void einesen_array_2d(int *array, int zeilen, int spalten)
+{
+  for(int i = 0; i < zeilen; i++)
+  {
+    for(int j = 0; j < spalten; j++)
+    {
+      printf("Inhalt für Array[%d][%d]: ", i, j);
+      scanf("%d", &array[i+zeilen*j]);
+    }
+  }
+}
 
 #endif // FUNKTIONENRK_IMPORT

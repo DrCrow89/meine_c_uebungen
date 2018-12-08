@@ -172,3 +172,8 @@ Schreiben Sie ein Programm welches in einem 5x5 Feld die Summe der Reihen und Sp
  8 17  1 15 24  
  5 14 23  7 16  
 22  6 20  4 13  
+
+## A6.9
+**Dateiname:** dulc_a6_9.c  
+**Aufgabenstellung:**  
+Schreiben Sie ein Programm, dass für ungerade Kantenlängen von 3 bis 9 ein magisches Quadrat erzeugen kann.  
