@@ -1,5 +1,70 @@
 #ifndef FUNKTIONENRK_IMPORT
 #define FUNKTIONENRK_IMPORT
+#include <stdbool.h>
+
+/** \brief Die Fuktion ptüft, ob das übergebne Quadrat ein magisches Quadrat ist
+ *
+ * \param int *array
+ * \param int zeilen
+ * \param int Spalten
+ * \param int magische_zahl
+ * \return bool rueckgabe
+ *
+ * Aufruf: pruefe_magisches_quadrat((int*)array, 5, 5, 65)
+ */
+bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten, int magische_zahl)
+{
+    bool rueckgabe = true;
+    int tempSumme;
+
+    // Prüfen der Zeilen
+    for(int i = 0; i < zeilen; i++)
+    {
+      tempSumme = 0;
+      for(int j = 0; j < spalten; j++)
+      {
+        tempSumme = tempSumme + array[i+zeilen*j];
+      }
+      if(tempSumme != magische_zahl)
+      {
+        rueckgabe = rueckgabe&&false;
+      }
+    }
+    // Prüfen der Spalten
+    for(int i = 0; i < zeilen; i++)
+    {
+      tempSumme = 0;
+      for(int j = 0; j < spalten; j++)
+      {
+        tempSumme = tempSumme + array[j+zeilen*i];
+      }
+      if(tempSumme != magische_zahl)
+      {
+        rueckgabe = rueckgabe&&false;
+      }
+    }
+    // Prüfen der Diagonale 1
+    tempSumme = 0;
+    for(int i = 0; i < zeilen; i++)
+    {
+      tempSumme = tempSumme + array[i+zeilen*i];
+    }
+    if(tempSumme != magische_zahl)
+    {
+      rueckgabe = rueckgabe&&false;
+    }
+    // Prüfen der Diagonale 2
+    tempSumme = 0;
+    for(int i = 0, j = spalten-1; i < zeilen; i++, j--)
+    {
+      tempSumme = tempSumme + array[j+zeilen*i];
+    }
+    if(tempSumme != magische_zahl)
+    {
+      rueckgabe = rueckgabe&&false;
+    }
+    return rueckgabe;
+}
 
 /** \brief Funktion sortiert den Inhalt des uebergebene Array der Groesse nach aufsteigend nach dem Bubble-Sort-Algorithmus
  *
@@ -44,6 +109,7 @@ void print_array_2d_format(int *array, int zeilen, int spalten)
     printf("\n");
   }
 }
+
 void einesen_array_2d(int *array, int zeilen, int spalten)
 {
   for(int i = 0; i < zeilen; i++)
