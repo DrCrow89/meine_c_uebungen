@@ -39,18 +39,7 @@ void print_array_2d_format(int *array, int zeilen, int spalten)
   {
     for(int j = 0; j < spalten; j++)
     {
-      if(array[i+zeilen*j] <= 9)
-      {
-        printf("[00%d]", array[i+zeilen*j]);
-      }
-      else if(array[i+zeilen*j] <= 99)
-      {
-        printf("[0%d]", array[i+zeilen*j]);
-      }
-      else
-      {
-        printf("[%d]", array[i+zeilen*j]);
-      }
+      printf("[%3d]", array[i+zeilen*j]);
     }
     printf("\n");
   }
