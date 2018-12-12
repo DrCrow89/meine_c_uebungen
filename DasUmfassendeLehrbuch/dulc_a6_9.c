@@ -9,6 +9,7 @@ int main()
   int start = 1;
   int inhalt = 2;
   int o = 2;
+  int temp = 0;
 
   do
   {
@@ -32,16 +33,53 @@ int main()
 
   // 1. Bedingung
   array[zeile+groesse*spalte] = 1;
+  zeile++;
+  spalte++;
   //array[index_mitte][index_mitte+1] = 1;
+  printf("[%d]Startzeile: %d und Spalte: %d und Inhalt[%d][%d] = %d\n", o, zeile, spalte, zeile, spalte, array[zeile+groesse*spalte]);
 
-    for (size_t index_zeilen = 0; index_zeilen < groesse; index_zeilen++)
+  while (o <= dimension)
+  {
+    printf("[%d]Startzeile: %d und Spalte: %d\n", o, zeile, spalte);
+    if(zeile < groesse)
     {
-      for (size_t index_spalten = 0; index_spalten < groesse; index_spalten++)
+      //printf("zeile: %d und spalte: %d\n", zeile, spalte);
+      if(spalte < groesse)
       {
-        printf("Array[%d][%d]: %d\n",index_zeilen, index_spalten, o );
-        array[index_zeilen+groesse*index_spalten] = o;
+        if(array[zeile+groesse*spalte] == 0)
+        {
+          printf("[%d]Neuezeile: %d und Spalte: %d\n", o, zeile, spalte);
+          array[zeile+groesse*spalte] = o;
+          //printf("Inhalt: %d\n", array[zeile+groesse*spalte]);
+          zeile++;
+          spalte++;
+          o++;
+        }
+        else
+        {
+          zeile = zeile -1;
+          spalte = spalte -1;
+          zeile = zeile + 2;
+          if(zeile < 0)
+          {
+            zeile = 0;
+          }
+          if(spalte < 0)
+          {
+            spalte = 0;
+          }
+        }
+      }
+      else
+      {
+        spalte = 0;
       }
     }
+    else
+    {
+      zeile = 0;
+    }
+  }
 
   print_array_2d_format((int*)array, groesse, groesse);
   if(pruefe_magisches_quadrat((int*)array, groesse, groesse, dimension))
