@@ -2,7 +2,19 @@
 #define FUNKTIONENRK_IMPORT
 #include <stdbool.h>
 
-/** \brief Die Fuktion ptüft, ob das übergebne Quadrat ein magisches Quadrat ist
+/* Magische Quadrate */
+/** \brief Die Fuktion gibt die magische Zahl von einem magisches Quadrat zurück
+ *
+ * \param int zeilen_oder_spalten
+ * \return int magische_zahl
+ *
+ */
+int get_magische_zahl(int uebergabe_zeilen_spalten)
+{
+  return uebergabe_zeilen_spalten*(uebergabe_zeilen_spalten*uebergabe_zeilen_spalten+1)/2;
+}
+
+/** \brief Die Fuktion prüft, ob das übergebne Quadrat ein magisches Quadrat ist
  *
  * \param int *array
  * \param int zeilen
@@ -12,10 +24,11 @@
  *
  * Aufruf: pruefe_magisches_quadrat((int*)array, 5, 5, 65)
  */
-bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten, int magische_zahl)
+bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten)
 {
     bool rueckgabe = true;
     int tempSumme;
+    int magische_zahl = get_magische_zahl(zeilen);
 
     // Prüfen der Zeilen
     for(int i = 0; i < zeilen; i++)
@@ -29,6 +42,7 @@ bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten, int magische_
       {
         rueckgabe = rueckgabe&&false;
       }
+      //printf("Zeile: %d == magische Zahl: %d\n", tempSumme, magische_zahl);
     }
     // Prüfen der Spalten
     for(int i = 0; i < zeilen; i++)
@@ -42,6 +56,7 @@ bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten, int magische_
       {
         rueckgabe = rueckgabe&&false;
       }
+      //printf("Spalte: %d == magische Zahl: %d\n", tempSumme, magische_zahl);
     }
     // Prüfen der Diagonale 1
     tempSumme = 0;
@@ -53,6 +68,7 @@ bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten, int magische_
     {
       rueckgabe = rueckgabe&&false;
     }
+    //printf("Dia 1: %d == magische Zahl: %d\n", tempSumme, magische_zahl);
     // Prüfen der Diagonale 2
     tempSumme = 0;
     for(int i = 0, j = spalten-1; i < zeilen; i++, j--)
@@ -63,9 +79,11 @@ bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten, int magische_
     {
       rueckgabe = rueckgabe&&false;
     }
+    //printf("Dia 2: %d == magische Zahl: %d\n", tempSumme, magische_zahl);
     return rueckgabe;
 }
 
+/* Sortieren */
 /** \brief Funktion sortiert den Inhalt des uebergebene Array der Groesse nach aufsteigend nach dem Bubble-Sort-Algorithmus
  *
  * \param int *array
@@ -89,6 +107,7 @@ void bubblesort(int *array, int lenght)
   }
 }
 
+/* Ein- Ausgaben */
 /** \brief Funktion gibt ein 2 dimensonales Array auf der Konsole aus mit Formatierung aus.
  *
  * \param int *array
@@ -99,7 +118,6 @@ void bubblesort(int *array, int lenght)
  */
 void print_array_2d_format(int *array, int zeilen, int spalten)
 {
-  printf("2dArray:\n");
   for(int i = 0; i < zeilen; i++)
   {
     for(int j = 0; j < spalten; j++)

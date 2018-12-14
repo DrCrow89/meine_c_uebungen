@@ -5,13 +5,9 @@
 int main()
 {
   int *array;
-  int groesse, index_mitte, spalte, zeile, dimension;
-  int start = 1;
+  int groesse, spalte, zeile, dimension;
   int inhalt = 2;
-  int o = 2;
-  int temp = 0;
 
-  do
   {
     printf("Wählt eine Quadratgröße aus 3, 5, 7, 9: ");
     scanf("%d", &groesse);
@@ -26,63 +22,66 @@ int main()
     }
   }
 
-  index_mitte = groesse/2;
   zeile = groesse/2+1;
   spalte = groesse/2;
   dimension = groesse*groesse;
 
-  // 1. Bedingung
+  // 1. Regel
   array[zeile+groesse*spalte] = 1;
   zeile++;
   spalte++;
-  //array[index_mitte][index_mitte+1] = 1;
-  printf("[%d]Startzeile: %d und Spalte: %d und Inhalt[%d][%d] = %d\n", o, zeile, spalte, zeile, spalte, array[zeile+groesse*spalte]);
 
-  while (o <= dimension)
+  while (inhalt <= dimension)
   {
-    printf("[%d]Startzeile: %d und Spalte: %d\n", o, zeile, spalte);
-    if(zeile < groesse)
+      // 2. Regel
+    if ((array[zeile+groesse*spalte] == 0)&&(zeile >= 0)&&(zeile < groesse)&&(spalte >= 0)&&(spalte < groesse))
     {
-      //printf("zeile: %d und spalte: %d\n", zeile, spalte);
-      if(spalte < groesse)
+      array[zeile+groesse*spalte] = inhalt;
+      zeile++;
+      spalte++;
+      inhalt++;
+      //print_array_2d_format((int*)array, groesse, groesse);
+    }
+      // 4. Regel
+    while ((inhalt <= dimension)&&((array[zeile+groesse*spalte] != 0)||(zeile < 0)||(zeile >= groesse)||(spalte < 0)||(spalte >= groesse)))
+    {
+      //printf("Wert: %d/ Zeile: %d/ Spalte: %d/ lala: %d\n", o, zeile, spalte, lala);
+      if(zeile < 0)
       {
-        if(array[zeile+groesse*spalte] == 0)
-        {
-          printf("[%d]Neuezeile: %d und Spalte: %d\n", o, zeile, spalte);
-          array[zeile+groesse*spalte] = o;
-          //printf("Inhalt: %d\n", array[zeile+groesse*spalte]);
-          zeile++;
-          spalte++;
-          o++;
-        }
-        else
-        {
-          zeile = zeile -1;
-          spalte = spalte -1;
-          zeile = zeile + 2;
-          if(zeile < 0)
-          {
-            zeile = 0;
-          }
-          if(spalte < 0)
-          {
-            spalte = 0;
-          }
-        }
+        zeile = groesse-1;
+      }
+      else if(zeile >= groesse)
+      {
+        zeile = 0;
       }
       else
       {
+        /* Zeile ist in den Grenzen */
+      }
+      if(spalte < 0)
+      {
+        spalte = groesse-1;
+      }
+      else if(spalte >= groesse)
+      {
         spalte = 0;
       }
-    }
-    else
-    {
-      zeile = 0;
+      else
+      {
+        /* Spalte ist in den Grenzen */
+      }
+
+        // 3. Regel
+      if(array[zeile+groesse*spalte] != 0)
+      {
+        zeile++;
+        spalte--;
+      }
     }
   }
 
   print_array_2d_format((int*)array, groesse, groesse);
-  if(pruefe_magisches_quadrat((int*)array, groesse, groesse, dimension))
+  if(pruefe_magisches_quadrat((int*)array, groesse, groesse))
   {
     printf("Es ist magisch\n");
   }
