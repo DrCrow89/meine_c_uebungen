@@ -2,6 +2,32 @@
 #define FUNKTIONENRK_IMPORT
 #include <stdbool.h>
 
+/* Strings*/
+int count_anzahl_buchstaben(char *wort)
+{
+  int anzahl = 0;
+  while (wort[anzahl] != '\0')
+  {
+    anzahl++;
+  }
+  return anzahl;
+}
+
+int count_buchstaben(char *wort, char uebergabe_buchstabe)
+{
+  int anzahl_buchstaben = count_anzahl_buchstaben((char*)wort);
+  int anzahl = 0;
+
+  for(int j = 0; j <= anzahl_buchstaben; j++)
+  {
+    if(wort[j] == uebergabe_buchstabe)
+    {
+      anzahl++;
+    }
+  }
+  return anzahl;
+}
+
 /* Magische Quadrate */
 /** \brief Die Fuktion gibt die magische Zahl von einem magisches Quadrat zurück
  *
