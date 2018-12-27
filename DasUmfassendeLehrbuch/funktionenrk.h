@@ -3,6 +3,12 @@
 #include <stdbool.h>
 
 /* Strings*/
+/** \brief Die Fuktion zählt die Anzahl der Buchstaben, welche in einem übergebenen Wort vorkommen.
+ *
+ * \param char *wort
+ * \return int anzahl
+ *
+ */
 int count_anzahl_buchstaben(char *wort)
 {
   int anzahl = 0;
@@ -12,6 +18,14 @@ int count_anzahl_buchstaben(char *wort)
   }
   return anzahl;
 }
+
+/** \brief Die Fuktion zählt die Anzahl der Buchstaben, welche in einem übergebenen Wort vorkommen.
+ *
+ * \param char *wort
+ * \param int uebergabe_buchstabe
+ * \return int anzahl
+ *
+ */
 
 int count_buchstaben(char *wort, char uebergabe_buchstabe)
 {
