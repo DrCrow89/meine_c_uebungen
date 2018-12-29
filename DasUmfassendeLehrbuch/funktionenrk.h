@@ -3,6 +3,10 @@
 #include <stdbool.h>
 
 /* Strings*/
+struct array_string{ char inhalt_string[100]; };
+char nullterm = '\0';
+
+/* Strings*/
 /** \brief Die Fuktion zählt die Anzahl der Buchstaben, welche in einem übergebenen Wort vorkommen.
  *
  * \param char *wort
@@ -40,6 +44,27 @@ int count_buchstaben(char *wort, char uebergabe_buchstabe)
     }
   }
   return anzahl;
+}
+
+struct array_string einlesen_string_in_array(void) {
+ int i;
+ struct array_string wort;
+ char eingabe_wort[100];
+ printf("Bitte geben Sie ein Wort ein: ");
+ fgets(eingabe_wort, 100, stdin);
+ for(int j = 0; j <= count_anzahl_buchstaben((char*)eingabe_wort); j++)
+ {
+   wort.inhalt_string[j] = eingabe_wort[j];
+ }
+ return wort;
+}
+
+void ausgabe_string_in_array(struct array_string z) {
+  int i;
+  for(i = 0; (i < sizeof(struct array_string) / sizeof(char))&&(z.inhalt_string[i] != nullterm); i++)
+  {
+    printf("%c", z.inhalt_string[i]);
+  }
 }
 
 /* Magische Quadrate */

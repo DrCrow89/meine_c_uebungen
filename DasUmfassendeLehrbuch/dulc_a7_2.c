@@ -1,36 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "funktionenrk.h"
 
-char* tausche_buchstaben(char *uebergabe_wort)
-{
-  char *tausch_wort1[100] = {' '};
-  int j = 0;
-
-  for (int i = strlen(uebergabe_wort)-2; i >= 0 ; i--)
-  {
-    //vergleich_buchstabe = eingabe_wort[i];
-    tausch_wort1[j] = uebergabe_wort[i];
-    j++;
-    //printf("Der Buchstabe %c in Index[%d]\n", tausch_wort1[j-1], j-1);
-  }
-  printf("Wort Func: %s\n", tausch_wort1);
-  return tausch_wort1;
-}
-
-int main()
-{
+int main(void) {
+  struct array_string new_array;
   char eingabe_wort[100];
+  new_array = einlesen_string_in_array();
 
+  ausgabe_string_in_array(new_array);
 
-  while(1)
-  {
-    printf("Bitte geben Sie ein Wort ein: ");
-    fgets(eingabe_wort, 100, stdin);
-
-      char *rueckgabe_array = tausche_buchstaben((char*)eingabe_wort);
-      printf("Wort Func: %s\n", rueckgabe_array);
-
-  }
   return 0;
 }
