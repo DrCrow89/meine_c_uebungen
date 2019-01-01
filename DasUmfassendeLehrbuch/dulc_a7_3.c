@@ -1,34 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "funktionenrk.h"
 
 int main()
 {
-  char eingabe_wort[100];
-  char bearbeitetes_wort[100];
-  int zu_loeschender_buchstabe = 101;
+  struct array_string wort = einlesen_string_in_array();
+  char eingabe_buchstabe[2];
+  do{
+    printf("Bitte geben Sie einen Buchstaben ein: ");
+    fgets(eingabe_buchstabe, 100, stdin);
+  }while (strlen(eingabe_buchstabe) > 2);
 
-  while(1)
-  {
-    printf("Bitte geben Sie ein Wort ein: ");
-    fgets(eingabe_wort, 100, stdin);
-    printf("Ihre Eingabe: %s\n", eingabe_wort);
-    int j = 0;
+  struct array_string neu = entferne_buchstabe_in_array(wort, eingabe_buchstabe[0]);
 
-    for (int i = 0; i < strlen(eingabe_wort) ; i++)
-    {
-      if(eingabe_wort[i] != zu_loeschender_buchstabe)
-      {
-        bearbeitetes_wort[j] = eingabe_wort[i];
-        j++;
-      }
-    }
-    printf("Ausgabe: ");
-    for (int i = 0; i < strlen(bearbeitetes_wort)-1 ; i++)
-    {
-      printf("%c", bearbeitetes_wort[i]);
-    }
-    printf("\nEnde\n");
-  }
+  printf("Neues Wort: ");
+  ausgabe_string_in_array(neu);
+
   return 0;
 }

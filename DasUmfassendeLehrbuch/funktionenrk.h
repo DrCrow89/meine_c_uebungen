@@ -107,6 +107,24 @@ struct array_string tausche_buchstaben_in_array(struct array_string uebergabe_ar
   return tausch_wort;
 }
 
+struct array_string entferne_buchstabe_in_array(struct array_string uebergabe_array, char uebergabe_buchstabe)
+{
+  struct array_string neues_wort = init_buchstaben_in_array();
+  int anzahl_buchstaben = count_groesse_in_array(uebergabe_array);
+  int index_neues_wort = 0;
+
+  for(int i = 0; i <= anzahl_buchstaben-1; i++)
+  {
+    //printf("Inhalt string[%d]: %c mit dem Vergleich des Buchstaben: %c \n",i, uebergabe_array.inhalt_string[i], uebergabe_buchstabe);
+    if(uebergabe_array.inhalt_string[i] != uebergabe_buchstabe)
+    {
+      neues_wort.inhalt_string[index_neues_wort] = uebergabe_array.inhalt_string[i];
+      index_neues_wort++;
+    }
+  }
+  return neues_wort;
+}
+
 /* Magische Quadrate */
 /** \brief Die Fuktion gibt die magische Zahl von einem magisches Quadrat zurück
  *
