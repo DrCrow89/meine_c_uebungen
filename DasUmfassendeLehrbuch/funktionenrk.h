@@ -7,6 +7,7 @@ struct array_string{ char inhalt_string[100]; };
 char nullterm = '\0';
 
 /* Strings*/
+
 /** \brief Die Fuktion zählt die Anzahl der Buchstaben, welche in einem übergebenen Wort vorkommen.
  *
  * \param char *wort
@@ -46,7 +47,8 @@ int count_buchstaben(char *wort, char uebergabe_buchstabe)
   return anzahl;
 }
 
-struct array_string einlesen_string_in_array(void) {
+struct array_string einlesen_string_in_array(void)
+{
  int i;
  struct array_string wort;
  char eingabe_wort[100];
@@ -59,12 +61,50 @@ struct array_string einlesen_string_in_array(void) {
  return wort;
 }
 
-void ausgabe_string_in_array(struct array_string z) {
+void ausgabe_string_in_array(struct array_string uebergabe_array)
+{
   int i;
-  for(i = 0; (i < sizeof(struct array_string) / sizeof(char))&&(z.inhalt_string[i] != nullterm); i++)
+  for(i = 0; (i < sizeof(struct array_string) / sizeof(char))&&(uebergabe_array.inhalt_string[i] != nullterm); i++)
   {
-    printf("%c", z.inhalt_string[i]);
+    printf("%c", uebergabe_array.inhalt_string[i]);
   }
+  printf("\n");
+}
+
+struct array_string init_buchstaben_in_array()
+{
+  struct array_string uebergabe_array;
+  for(int i = 0; (i < sizeof(struct array_string) / sizeof(char)); i++)
+  {
+    uebergabe_array.inhalt_string[i] = '\0';
+    //printf("Buchstabe: %c bei Index: %d\n", uebergabe_array.inhalt_string[i], i);
+  }
+  return uebergabe_array;
+}
+
+int count_groesse_in_array(struct array_string uebergabe_array)
+{
+  int zaehler = -1;
+  for(int i = 0; (i < sizeof(struct array_string) / sizeof(char))&&(uebergabe_array.inhalt_string[i] != nullterm); i++)
+  {
+    //printf("Buchstabe Übergabe: %c bei Index: %d\n", uebergabe_array.inhalt_string[i], i);
+    zaehler++;
+  }
+  //printf("Groesse: %d\n", zaehler);
+  return zaehler;
+}
+
+struct array_string tausche_buchstaben_in_array(struct array_string uebergabe_array)
+{
+  struct array_string tausch_wort = init_buchstaben_in_array();
+  int anzahl_buchstaben = count_groesse_in_array(uebergabe_array);
+  int i, j;
+
+  for(i = anzahl_buchstaben-1, j = 0; i >= 0; i--, j++)
+  {
+    tausch_wort.inhalt_string[i] = uebergabe_array.inhalt_string[j];
+  }
+  return tausch_wort;
 }
 
 /* Magische Quadrate */

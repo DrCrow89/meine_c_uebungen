@@ -4,11 +4,11 @@
 #include "funktionenrk.h"
 
 int main(void) {
-  struct array_string new_array;
-  char eingabe_wort[100];
-  new_array = einlesen_string_in_array();
+  struct array_string wort = einlesen_string_in_array();
+  struct array_string tausch = tausche_buchstaben_in_array(wort);
 
-  ausgabe_string_in_array(new_array);
+  printf("Vertauscht: ");
+  ausgabe_string_in_array(tausch);
 
   return 0;
 }
