@@ -178,7 +178,13 @@ Schreiben Sie ein Programm welches in einem 5x5 Feld die Summe der Reihen und Sp
 **Aufgabenstellung:**  
 Schreiben Sie ein Programm, dass für ungerade Kantenlängen von 3 bis 9 ein magisches Quadrat erzeugen kann.  
 
+# Aufgabe 7
 ## A7.1
 **Dateiname:** dulc_a7_1.c  
 **Aufgabenstellung:**  
-Erstellen Sie eine Funktion, die einen String und einen Buchstaben übergeben bekommt und zurückgibt, wie oft dieser Buchstabe im Wort vorkommt. Benutzen Sie hierzu Übung 6.1 als Vorlag.    
+Erstellen Sie eine Funktion, die einen String und einen Buchstaben übergeben bekommt und zurückgibt, wie oft dieser Buchstabe im Wort vorkommt. Benutzen Sie hierzu Übung 6.1 als Vorlag.  
+
+## A7.2
+**Dateiname:** dulc_a7_2.c  
+**Aufgabenstellung:**  
+Erstellen Sie eine Funktion, die die Reihenfolge der Zeichen in einem String umkehrt. Benutzen Sie hierzu Übung 6.2 als Vorlag.  
