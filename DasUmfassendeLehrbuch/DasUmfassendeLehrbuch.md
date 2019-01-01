@@ -188,3 +188,8 @@ Erstellen Sie eine Funktion, die einen String und einen Buchstaben übergeben be
 **Dateiname:** dulc_a7_2.c  
 **Aufgabenstellung:**  
 Erstellen Sie eine Funktion, die die Reihenfolge der Zeichen in einem String umkehrt. Benutzen Sie hierzu Übung 6.2 als Vorlag.  
+
+## A7.3
+**Dateiname:** dulc_a7_3.c  
+**Aufgabenstellung:**  
+Erstellen Sie eine Funktion, die alle *e* aus einem String entfernt. Verwenden Sie die Lösung aus Aufgabe 6.3 als Vorlage.  
