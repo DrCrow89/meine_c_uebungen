@@ -193,3 +193,8 @@ Erstellen Sie eine Funktion, die die Reihenfolge der Zeichen in einem String umk
 **Dateiname:** dulc_a7_3.c  
 **Aufgabenstellung:**  
 Erstellen Sie eine Funktion, die alle *e* aus einem String entfernt. Verwenden Sie die Lösung aus Aufgabe 6.3 als Vorlage.  
+
+## A7.6
+**Dateiname:** dulc_a7_6.c  
+**Aufgabenstellung:**  
+Erstellen Sie eine Funktion, die die Zahlen in einem Array sortiert. Wie viele Vergleiche und Vertauschungen nimmt ihre Funktion maximal vor um ein Array mit n Elementen zu sortieren?  
