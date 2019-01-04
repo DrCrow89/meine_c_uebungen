@@ -4,49 +4,44 @@
 
 void eigensort_einfach(int *uebergabe_array, int lenght)
 {
+  int temp = 0;
   int index_min_wert = 0;
   int index_neg_wert = 0;
-  int index_letzter_neg_wert = 0;
-  bool neg_wert_gefunden = false;
+  int index_letzter_neg_wert = -1;
+  int index_letzter_pos_wert = 0;
 
-  for (int i = 0; i < lenght-1; i++)
-  {
+  bool pos_wert_gefunden = false;
+  int zaehler = 0;
+
     do{
-      if (uebergabe_array[i] < 0)
+      if (uebergabe_array[zaehler] >= 0)
       {
-        index_letzter_neg_wert = i;
-        neg_wert_gefunden = true;
-
+        index_letzter_pos_wert = zaehler;
+        pos_wert_gefunden = true;
       }
       else
       {
-        /* code */
-      }
-    }while ((neg_wert_gefunden == false)&&);
-  }
 
-  for (int i = 0; i < lenght-1; i++)
+      }
+      zaehler++;
+    }while ((pos_wert_gefunden == false)&&(zaehler < lenght-1));
+
+  for (int i = index_letzter_pos_wert; i < lenght-1; i++)
   {
-    for (int j = i+1; j < lenght; j++)
+    if(uebergabe_array[i] < 0)
     {
-      //printf("Bei i: %d und j: %d ist der Inhalt: %d und min: %d\n",i,j, uebergabe_array[j], min_zahl);
-      if (uebergabe_array[j] < uebergabe_array[min_index])
-      {
-        min_index = j;
-      }
-      else
-      {
-        //Falls die Zahl größer ist, tue nichts. Wir suchen die kleinste Zahl.
-      }
+      temp = uebergabe_array[index_letzter_pos_wert];
+      uebergabe_array[index_letzter_pos_wert] = uebergabe_array[i];
+      uebergabe_array[i] = temp;
+      index_letzter_pos_wert++;
     }
-
   }
 }
 
 int main()
 {
-  int zahlen_array_eingabe[] = {8,0,4,1,3,9,100,4,75,77,-12,0,7,9,4,6,2,8,7,55,5,77,12,9,0};
-  int lenght = 25;
+  int zahlen_array_eingabe[] = {-5,2,1,-3,0,-2,4,-4,-1,3,5};
+  int lenght = 11;
 
   printf("Unsortiert: ");
   for (int i = 0; i < lenght; i++)
@@ -55,7 +50,7 @@ int main()
   }
   printf("\n");
 
-  eigensort(zahlen_array_eingabe, lenght);
+  eigensort_einfach(zahlen_array_eingabe, lenght);
 
   printf("Sortiert: ");
   for (int i = 0; i < lenght; i++)
