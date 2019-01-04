@@ -207,6 +207,44 @@ bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten)
 }
 
 /* Sortieren */
+/** \brief Funktion sortiert alle negativen Zahlen in einem Array vor die positiven. Es wird nicht nach er größe der Zahlen sortiert.
+ *
+ * \param int *array
+ * \param int lenght
+ *
+ */
+void eigensort_einfach(int *uebergabe_array, int lenght)
+{
+  int temp = 0;
+  int index_letzter_pos_wert = 0;
+  bool pos_wert_gefunden = false;
+  int zaehler = 0;
+
+    do{
+      if (uebergabe_array[zaehler] >= 0)
+      {
+        index_letzter_pos_wert = zaehler;
+        pos_wert_gefunden = true;
+      }
+      else
+      {
+
+      }
+      zaehler++;
+    }while ((pos_wert_gefunden == false)&&(zaehler < lenght-1));
+
+  for (int i = index_letzter_pos_wert; i < lenght-1; i++)
+  {
+    if(uebergabe_array[i] < 0)
+    {
+      temp = uebergabe_array[index_letzter_pos_wert];
+      uebergabe_array[index_letzter_pos_wert] = uebergabe_array[i];
+      uebergabe_array[i] = temp;
+      index_letzter_pos_wert++;
+    }
+  }
+}
+
 /** \brief Funktion sortiert den Inhalt des uebergebene Array der Groesse nach aufsteigend nach Tausch-Algorithmus.
  *
  * \param int *array
@@ -247,7 +285,6 @@ void eigensort(int *uebergabe_array, int lenght)
   }
 }
 
-/* Sortieren */
 /** \brief Funktion sortiert den Inhalt des uebergebene Array der Groesse nach aufsteigend nach dem Bubble-Sort-Algorithmus
  *
  * \param int *array
