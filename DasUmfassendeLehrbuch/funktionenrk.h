@@ -207,6 +207,47 @@ bool pruefe_magisches_quadrat(int *array, int zeilen, int spalten)
 }
 
 /* Sortieren */
+/** \brief Funktion sortiert den Inhalt des uebergebene Array der Groesse nach aufsteigend nach Tausch-Algorithmus.
+ *
+ * \param int *array
+ * \param int lenght
+ *
+ */
+void eigensort(int *uebergabe_array, int lenght)
+{
+  int min_index = 0;
+  int temp_zahl = 0;
+
+  for (int i = 0; i < lenght-1; i++)
+  {
+    min_index = i;
+    for (int j = i+1; j < lenght; j++)
+    {
+      //printf("Bei i: %d und j: %d ist der Inhalt: %d und min: %d\n",i,j, uebergabe_array[j], min_zahl);
+      if (uebergabe_array[j] < uebergabe_array[min_index])
+      {
+        min_index = j;
+      }
+      else
+      {
+        //Falls die Zahl größer ist, tue nichts. Wir suchen die kleinste Zahl.
+      }
+    }
+    temp_zahl = uebergabe_array[min_index];
+    uebergabe_array[min_index] = uebergabe_array[i];
+    uebergabe_array[i] = temp_zahl;
+    /*
+    printf("Sortiert[%d]: ", i);
+    for (int i = 0; i < 10; i++)
+    {
+      printf("%d, ", uebergabe_array[i]);
+    }
+    printf("\n");
+    */
+  }
+}
+
+/* Sortieren */
 /** \brief Funktion sortiert den Inhalt des uebergebene Array der Groesse nach aufsteigend nach dem Bubble-Sort-Algorithmus
  *
  * \param int *array
