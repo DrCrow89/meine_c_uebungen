@@ -203,3 +203,8 @@ Erstellen Sie eine Funktion, die die Zahlen in einem Array sortiert. Wie viele V
 **Dateiname:** dulc_a7_7.c  
 **Aufgabenstellung:**  
 Erstellen Sie eine Funktion, die die Zahlen in einem Array so umordnet, Dass anschließend alle negativen Zahlen vor allen nicht negativen Zahlen stehen. Wie viele Vergleiche und Vertauschungen nimmt Ihre Funktion maximal vor, um ein Array mit n Elementen umzuordnen? Versuchen Sie, mit deutlich weniger Vertauschungen auszukommen als in Aufgabe 7.6.  
+
+## A7.8
+**Dateiname:** dulc_a7_8.c  
+**Aufgabenstellung:**  
+Erstellen Sie eine rekursive Funktion, die die Reihenfolge der Zahlen in einem Array umkehrt.  
