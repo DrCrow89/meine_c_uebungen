@@ -207,4 +207,4 @@ Erstellen Sie eine Funktion, die die Zahlen in einem Array so umordnet, Dass ans
 ## A7.8
 **Dateiname:** dulc_a7_8.c  
 **Aufgabenstellung:**  
-Erstellen Sie eine rekursive Funktion, die die Reihenfolge der Zahlen in einem Array umkehrt.  
+Erstellen Sie eine rekursive Funktion, die die Reihenfolge der Zahlen in einem Array umkehrt. Zugfolge muss nicht optimal sein.  
