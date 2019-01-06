@@ -4,17 +4,15 @@
 void print_schachbrett(int *array)
 {
   // Bei einem Schachbrett gibt es immer nur ein 8x8 Spielfeld.
-  int spalten = 8;
-  int zeilen = 8;
 
-  for(int i = 0; i < zeilen; i++)
+  for(int zeilen = 0; zeilen < 8; zeilen++)
   {
     printf("+---+---+---+---+---+---+---+---+\n");
-    for(int j = 0; j < spalten; j++)
+    for(int spalten = 0; spalten < 8; spalten++)
     {
-      if ((array[i+zeilen*j] >= 0)||(array[i+zeilen*j] == 88))
+      if ((array[spalten+8*zeilen] >= 0)||(array[spalten+8*zeilen] == 88))
       {
-        printf("|%3d", array[i+zeilen*j]);
+        printf("|%3d", array[spalten+8*zeilen]);
       }
       else
       {
@@ -38,7 +36,7 @@ int main()
   {
     for (int spalten = 0; spalten < 8; spalten++)
     {
-      schachbrett[zeilen][spalten] = -1;
+      schachbrett[spalten][zeilen] = -1;
     }
   }
 
@@ -61,8 +59,8 @@ int main()
   schachbrett[zielfeld_zeile-1][zielfeld_spalte-1] = 88;
   */
 
-  printf("Startfeld: [%d][%d]\n", startfeld_zeile, startfeld_spalte);
-  printf("Zielfeld: [%d][%d]\n", zielfeld_zeile, zielfeld_spalte);
+  printf("Startfeld: [%d][%d]\n", startfeld_zeile+1, startfeld_spalte+1);
+  printf("Zielfeld: [%d][%d]\n", zielfeld_zeile+1, zielfeld_spalte+1);
   print_schachbrett((int*)schachbrett);
 
   return 0;
