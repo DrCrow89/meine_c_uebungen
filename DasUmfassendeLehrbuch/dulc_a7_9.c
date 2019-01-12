@@ -127,60 +127,60 @@ int main()
     int abfrage = handler_menue();
     switch(abfrage)
     {
-        case 1:
+      case 1:
+      {
+        startfeld_zeile = 9;
+        startfeld_spalte = 9;
+        zielfeld_zeile = 9;
+        zielfeld_spalte = 9;
+        init_schachbrett((int*)schachbrett);
+
+        while ((startfeld_zeile >= 9)||(startfeld_zeile <= 0)||(startfeld_spalte >= 9)||(startfeld_spalte <= 0))
         {
-          startfeld_zeile = 9;
-          startfeld_spalte = 9;
-          zielfeld_zeile = 9;
-          zielfeld_spalte = 9;
-          init_schachbrett((int*)schachbrett);
-
-          while ((startfeld_zeile >= 9)||(startfeld_zeile <= 0)||(startfeld_spalte >= 9)||(startfeld_spalte <= 0))
-          {
-            printf("Bitte geben Sie ein Startfeld (Zeile Spalte) zwischen 1 und 8 an: ");
-            scanf("%d %d", &startfeld_zeile, &startfeld_spalte);
-          }
-
-          while ((zielfeld_zeile >= 9)||(zielfeld_zeile <= 0)||(zielfeld_spalte >= 9)||(zielfeld_spalte <= 0))
-          {
-            printf("Bitte geben Sie ein Zielfeld (Zeile Spalte) zwischen 1 und 8 an: ");
-            scanf("%d %d", &zielfeld_zeile, &zielfeld_spalte);
-          }
-          printf("Startfeld: [%d][%d]\n", startfeld_zeile, startfeld_spalte);
-          printf("Zielfeld: [%d][%d]\n", zielfeld_zeile, zielfeld_spalte);
-          springer_problem((int*)schachbrett, startfeld_zeile-1, startfeld_spalte-1, zielfeld_zeile-1, zielfeld_spalte-1, 0);
-          print_schachbrett((int*)schachbrett);
-          break;
+          printf("Bitte geben Sie ein Startfeld (Zeile Spalte) zwischen 1 und 8 an: ");
+          scanf("%d %d", &startfeld_zeile, &startfeld_spalte);
         }
 
-        case 2:
+        while ((zielfeld_zeile >= 9)||(zielfeld_zeile <= 0)||(zielfeld_spalte >= 9)||(zielfeld_spalte <= 0))
         {
-          int test_anzahl = 1;
-          for(int test_start_zeile = 1; test_start_zeile <= 8; test_start_zeile++)
+          printf("Bitte geben Sie ein Zielfeld (Zeile Spalte) zwischen 1 und 8 an: ");
+          scanf("%d %d", &zielfeld_zeile, &zielfeld_spalte);
+        }
+        printf("Startfeld: [%d][%d]\n", startfeld_zeile, startfeld_spalte);
+        printf("Zielfeld: [%d][%d]\n", zielfeld_zeile, zielfeld_spalte);
+        springer_problem((int*)schachbrett, startfeld_zeile-1, startfeld_spalte-1, zielfeld_zeile-1, zielfeld_spalte-1, 0);
+        print_schachbrett((int*)schachbrett);
+        break;
+      }
+
+      case 2:
+      {
+        int test_anzahl = 1;
+        for(int test_start_zeile = 1; test_start_zeile <= 8; test_start_zeile++)
+        {
+          for (int test_start_spalte = 1; test_start_spalte <= 8; test_start_spalte++)
           {
-            for (int test_start_spalte = 1; test_start_spalte <= 8; test_start_spalte++)
+            for (int test_ziel_zeile = 1; test_ziel_zeile <= 8; test_ziel_zeile++)
             {
-              for (int test_ziel_zeile = 1; test_ziel_zeile <= 8; test_ziel_zeile++)
+              for (int test_ziel_spalte = 1; test_ziel_spalte <= 8; test_ziel_spalte++)
               {
-                for (int test_ziel_spalte = 1; test_ziel_spalte <= 8; test_ziel_spalte++)
-                {
-                  init_schachbrett((int*)schachbrett);
-                  printf("Test: %d mit Startfeld: [%d][%d] und Zielfeld: [%d][%d]\n", test_anzahl, test_start_zeile, test_start_spalte, test_ziel_zeile, test_ziel_spalte);
-                  springer_problem((int*)schachbrett, test_start_zeile-1, test_start_spalte-1, test_ziel_zeile-1, test_ziel_spalte-1, 0);
-                  //print_schachbrett((int*)schachbrett);
-                  test_anzahl++;
-                }
+                init_schachbrett((int*)schachbrett);
+                printf("Test: %d mit Startfeld: [%d][%d] und Zielfeld: [%d][%d]\n", test_anzahl, test_start_zeile, test_start_spalte, test_ziel_zeile, test_ziel_spalte);
+                springer_problem((int*)schachbrett, test_start_zeile-1, test_start_spalte-1, test_ziel_zeile-1, test_ziel_spalte-1, 0);
+                //print_schachbrett((int*)schachbrett);
+                test_anzahl++;
               }
             }
           }
-          break;
         }
-        case 3:
-        {
-          prog_start = false;
-          break;
-        }
+        break;
       }
+      case 3:
+      {
+        prog_start = false;
+        break;
+      }
+    }
   }
   return 0;
 }
