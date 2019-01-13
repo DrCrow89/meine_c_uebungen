@@ -218,3 +218,9 @@ Erstellen Sie ein Programm, das einen Springer von einem beliebigen Startpunkt z
 **Dateiname:** dulc_a7_10.c  
 **Aufgabenstellung:**  
 Erweitern Sie das Programm der vorherigen Aufgabe so, dass eine optimale d.h. möglichst kurze Zugfolge ermittelt wird.  
+
+# Aufgabe 8
+## A8.1
+**Dateiname:** dulc_a8_1.c  
+**Aufgabenstellung:**  
+Erstellen Sie eine Funktion, die ein Array von Gleitkommazahlen übergeben bekommt und die größte, die kleinste und den Mittelwert aller Zahlen zurückgibt.  
