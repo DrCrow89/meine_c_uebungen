@@ -125,8 +125,9 @@ int handler_menue()
   printf("---------- Menü Springerproblem----------\n");
   printf("Welche Funktion möchten Sie benutzen:\n");
   printf("1: Manuelle Eingabe\n");
-  printf("2: Springerproblem Autotest\n");
-  printf("3: Ende\n");
+  printf("2: Manuelle Eingabe und kürzesze Zugfolge\n");
+  printf("3: Springerproblem Autotest\n");
+  printf("4: Ende\n");
   printf("-----------------------------------------\n");
   printf("Eingabe: ");
   scanf("%d", &eingabe);
@@ -175,8 +176,44 @@ int main()
         printf("Mit %d Zügen\n", count_spruenge((int*)schachbrett));
         break;
       }
-
       case 2:
+      {
+        startfeld_zeile = 9;
+        startfeld_spalte = 9;
+        zielfeld_zeile = 9;
+        zielfeld_spalte = 9;
+        init_schachbrett((int*)schachbrett);
+
+        while ((startfeld_zeile >= 9)||(startfeld_zeile <= 0)||(startfeld_spalte >= 9)||(startfeld_spalte <= 0))
+        {
+          printf("Bitte geben Sie ein Startfeld (Zeile Spalte) zwischen 1 und 8 an: ");
+          scanf("%d %d", &startfeld_zeile, &startfeld_spalte);
+        }
+
+        while ((zielfeld_zeile >= 9)||(zielfeld_zeile <= 0)||(zielfeld_spalte >= 9)||(zielfeld_spalte <= 0))
+        {
+          printf("Bitte geben Sie ein Zielfeld (Zeile Spalte) zwischen 1 und 8 an: ");
+          scanf("%d %d", &zielfeld_zeile, &zielfeld_spalte);
+        }
+        printf("Startfeld: [%d][%d]\n", startfeld_zeile, startfeld_spalte);
+        printf("Zielfeld: [%d][%d]\n", zielfeld_zeile, zielfeld_spalte);
+
+        for(erlaubte_aufrufe = 1; ; erlaubte_aufrufe++)
+        {
+          if(springer_problem((int*)schachbrett, startfeld_zeile-1, startfeld_spalte-1, zielfeld_zeile-1, zielfeld_spalte-1, 0, erlaubte_aufrufe) == 1)
+          {
+            break;
+          }
+          else
+          {
+            /* Die kleinste Lösung ist noch nicht gefunden. */
+          }
+        }
+        print_schachbrett((int*)schachbrett);
+        printf("Mit %d Zügen\n", count_spruenge((int*)schachbrett));
+        break;
+      }
+      case 3:
       {
         int test_anzahl = 1;
         for(int test_start_zeile = 1; test_start_zeile <= 8; test_start_zeile++)
@@ -198,7 +235,7 @@ int main()
         }
         break;
       }
-      case 3:
+      case 4:
       {
         prog_start = false;
         break;
