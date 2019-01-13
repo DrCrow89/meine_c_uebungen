@@ -14,22 +14,24 @@ void print_array_float_zahlen(float *uebergabe_array, int uebergabe_groesse)
 void berechne_min_max_average(float *uebergabe_array, int uebergabe_groesse, float *uebergabe_min, float *uebergabe_max, float *uebergabe_ave)
 {
   float temp_average = uebergabe_array[0];
-  *uebergabe_min = uebergabe_array[0];
-  *uebergabe_max = uebergabe_array[0];
+  float temp_min = uebergabe_array[0];
+  float temp_max = uebergabe_array[0];
 
   for (int i = 1; i < uebergabe_groesse; i++)
   {
-    if (*uebergabe_min > uebergabe_array[i])
+    if (temp_min > uebergabe_array[i])
     {
-      *uebergabe_min = uebergabe_array[i];
+      temp_min = uebergabe_array[i];
     }
-    if (*uebergabe_max < uebergabe_array[i])
+    if (temp_max < uebergabe_array[i])
     {
-      *uebergabe_max = uebergabe_array[i];
+      temp_max = uebergabe_array[i];
     }
     temp_average = temp_average + uebergabe_array[i];
   }
   *uebergabe_ave = temp_average/uebergabe_groesse;
+  *uebergabe_min = temp_min;
+  *uebergabe_max = temp_max;
 }
 
 int main()
