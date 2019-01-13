@@ -208,3 +208,8 @@ Erstellen Sie eine Funktion, die die Zahlen in einem Array so umordnet, Dass ans
 **Dateiname:** dulc_a7_8.c  
 **Aufgabenstellung:**  
 Erstellen Sie eine rekursive Funktion, die die Reihenfolge der Zahlen in einem Array umkehrt. Zugfolge muss nicht optimal sein.  
+
+## A7.9
+**Dateiname:** dulc_a7_9.c  
+**Aufgabenstellung:**  
+Erstellen Sie ein Programm, das einen Springer von einem beliebigen Startpunkt zu einem beliebigen Zielpunkt auf dem Schachbrett ziehen kann. Die vom Programm gewählte Zugfolge muss nicht ideal sein.  
