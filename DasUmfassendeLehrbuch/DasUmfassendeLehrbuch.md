@@ -224,3 +224,11 @@ Erweitern Sie das Programm der vorherigen Aufgabe so, dass eine optimale d.h. m�
 **Dateiname:** dulc_a8_1.c  
 **Aufgabenstellung:**  
 Erstellen Sie eine Funktion, die ein Array von Gleitkommazahlen übergeben bekommt und die größte, die kleinste und den Mittelwert aller Zahlen zurückgibt.  
+
+## A8.2
+**Dateiname:** dulc_a8_2.c  
+**Aufgabenstellung:**  
+Schreiben Sie eine Funktion, die ein Array von Integer-Zahlen übergeben bekommt und auf allen Zahlen des Arrays eine konfigurierbare Operation ausführt. Die auszuführende Operation soll der Funktion über einen Funktionszeiger mitgeteilt werden. Die übergebene Funktion soll einen int-Wert als Parameter erhalten und einen int-Wert zurückgeben. Testen Sie Ihr Programm mit den folgenden Operationen:  
+* Integer-Division durch 2
+* Rest bei Division durch 2
+* Ausgabe auf dem Bildschirm
